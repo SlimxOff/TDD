@@ -18,7 +18,10 @@ public class PhoneBookTest {
     @Test
     public void testFindByNumber(){
         PhoneBook phoneBook = new PhoneBook();
-        Boolean isNumber = phoneBook.findByNumber();
+        Boolean isNumber = phoneBook.findByNumber(false);
+        assertEquals(isNumber,true);
+
+        isNumber = phoneBook.findByNumber(true);
         assertEquals(isNumber,true);
     }
 }

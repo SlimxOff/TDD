@@ -6,7 +6,7 @@ public class PhoneBook {
         return a;
     }
 
-    public static boolean findByNumber(){
-        return Boolean.parseBoolean(null);
+    public static boolean findByNumber(boolean isNumber){
+        return isNumber;
     }
 }
