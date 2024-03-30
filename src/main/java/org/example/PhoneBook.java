@@ -2,8 +2,7 @@ package org.example;
 
 public class PhoneBook {
 
-    public static int add(){
-        return 0;
-
+    public static int add(int a){
+        return a;
     }
 }

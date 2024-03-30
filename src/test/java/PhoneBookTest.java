@@ -8,7 +8,10 @@ public class PhoneBookTest {
     public void testAdd() {
         PhoneBook phoneBook = new PhoneBook();
 
-        int newSize = phoneBook.add();
+        int initialSize = phoneBook.add(1);
+        assertEquals(0, initialSize);
+
+        int newSize = phoneBook.add(1);
         assertEquals(1, newSize);
     }
 }
