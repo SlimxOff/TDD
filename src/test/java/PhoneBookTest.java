@@ -14,4 +14,11 @@ public class PhoneBookTest {
         int newSize = phoneBook.add(1);
         assertEquals(1, newSize);
     }
+
+    @Test
+    public void testFindByNumber(){
+        PhoneBook phoneBook = new PhoneBook();
+        Boolean isNumber = phoneBook.findByNumber();
+        assertEquals(isNumber,true);
+    }
 }
